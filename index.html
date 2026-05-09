@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenath Dashboard</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            background-image: 
+                linear-gradient(#ccc 1px, transparent 1px),
+                linear-gradient(90deg, #ccc 1px, transparent 1px);
+            background-size: 40px 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .header-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #add8e6;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .header-bar h2 {
+            margin: 0;
+            color: #333;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .custom-btn {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            width: 260px;
+            height: 55px;
+            border-radius: 15px 20px 20px 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            animation: zoomInOut 3s ease-in-out infinite;
+        }
+
+        @keyframes zoomInOut {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .btn-icon {
+            background-color: white;
+            width: 70px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #3cb49a;
+            box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        .btn-icon svg { width: 28px; height: 28px; fill: currentColor; }
+
+        .btn-text {
+            background-color: #3cb49a;
+            color: white;
+            flex-grow: 1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-weight: bold;
+            font-size: 13px;
+            z-index: 1;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .main-text {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .robot-icon {
+            width: 25px;
+            height: 25px;
+            fill: #333;
+        }
+
+        .sub-text {
+            color: #666;
+            font-size: 0.65rem;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            color: #333;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-bar">
+        <h2>Hello!</h2>
+    </div>
+
+    <div class="button-container">
+        <!-- Tombol Perpanjang ke Link ImgBB -->
+        <a href="https://ibb.co.com/GfN0TVkz" class="custom-btn">
+            <div class="btn-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2L15 8H9L12 2ZM3 10V22H21V10H3ZM12 13C13.1 13 14 13.9 14 15C14 16.1 13.1 17 12 17C10.9 17 10 16.1 10 15C10 13.9 10.9 13 12 13Z"/></svg>
+            </div>
+            <div class="btn-text">PERPANJANG</div>
+        </a>
+
+        <!-- Tombol Contact Admin -->
+        <a href="https://wa.me/6289688018965?text=halo%20min%20udah%20transfer%20nih/halo%20min%20ini%20gimana%20yaa%20cara%20pakai%20websitenya?" class="custom-btn">
+            <div class="btn-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/></svg>
+            </div>
+            <div class="btn-text">CONTACT ADMIN</div>
+        </a>
+    </div>
+
+    <div class="center-content">
+        <div class="main-text">
+            <svg class="robot-icon" viewBox="0 0 24 24">
+                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h5a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2zM7.5 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM8 16h8v2H8v-2z"/>
+            </svg>
+            Screenshot layar saat anda sudah transfer!
+        </div>
+        <div class="sub-text">Gunakan screenshot anda sebagai bukti saat anda contact admin.</div>
+    </div>
+
+    <div class="footer">lenath dashboard!</div>
+
+</body>
+</html>
